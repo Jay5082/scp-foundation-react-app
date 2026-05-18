@@ -1,0 +1,42 @@
+[
+  {
+    "id": "SCP-002",
+    "class": "Euclid",
+    "image": "images/800px-SCP002.jpg",
+    "shortDesc": "A fleshy tumorous growth whose interior resembles a furnished apartment made entirely from human biological matter.",
+    "containment": "SCP-002 is to remain connected to a suitable power supply at all times, to keep it in what appears to be a recharging mode. In case of electrical outage, the emergency barrier between the object and the facility is to be closed and the immediate area evacuated. Once facility power is re-established, alternating bursts of X-ray and ultraviolet light must strobe the area until SCP-002 is re-affixed to the power supply and returned to recharging mode. Containment area is to be kept at negative air pressure at all times. Teams including a minimum of two (2) members are required within 20 meters of SCP-002. No personnel below Level 3 are permitted within SCP-002.",
+    "description": "SCP-002 resembles a tumorous, fleshy growth with a volume of roughly 60 cubic meters. An iron valve hatch on one side leads to its interior, which appears to be a standard low-rent apartment. The room contains furniture which appears to be sculpted bone, woven hair, and various other biological substances produced by the human body. To date, subject has been responsible for the disappearances of seven personnel. It has further furnished itself with two lamps, a throw rug, a television, a radio, a beanbag chair, three books in an unknown language, four children's toys, and a small potted plant. Whatever process the subject uses to convert organic matter into furnishings is only facilitated by the introduction of living humans."
+  },
+  {
+    "id": "SCP-003",
+    "class": "Euclid",
+    "image": "",
+    "shortDesc": "A biological entity resembling an ancient circuit board that grows exponentially when temperatures drop below 35 degrees Celsius.",
+    "containment": "SCP-003 is to be maintained at a constant temperature of no less than 35 degrees C and ideally kept above 100 degrees C. No living multicellular organisms of Category IV or higher complexity may be allowed to come into contact with SCP-003. In event of total power failure, if SCP-003-1 begins to increase its mass, assigned personnel must engage in skin contact with SCP-003-1 to return it to above the critical temperature. Personnel who enter the containment area must first be examined for body parasites and sterilized if such organisms are present. SCP-003-1 must not be removed from SCP-003-2 except in case of emergency.",
+    "description": "SCP-003 consists of two related components: SCP-003-1 and SCP-003-2. SCP-003-1 appears to be composed of chitin, hair, and nails of unknown biology, arranged in a configuration similar to a computer motherboard. Testing reveals SCP-003-1 to predate earliest known circuit boards by a factor of thousands of years. SCP-003-1 is considered sentient but not actively dangerous except under certain conditions. SCP-003-1 was found on a stone tablet, SCP-003-2, on which it currently resides. The runes on SCP-003-2 are not part of any known language, and emit pale, flickering light patterns. When SCP-003 drops below 35 degrees C, SCP-003-1 enters a growth state characterized by an exponential increase in mass, converting matter around it into unidentified anomalous substances."
+  },
+  {
+    "id": "SCP-004",
+    "class": "Euclid",
+    "image": "images/SCP004_door.jpg",
+    "shortDesc": "An old barn door and 12 rusted keys. Most keys tear subjects apart across dimensions. Only two keys are considered safe.",
+    "containment": "When handling items SCP-004-2 through SCP-004-13, proper procedure is vital. The items are not permitted to be moved off-site unless accompanied by two Level 4 security personnel. Under no circumstances should any other component of SCP-004 be taken through SCP-004-1. Should any objects breach containment, the keys must be brought inside and the door closed prior to activation of Site 62 on-site warhead. Unauthorized removal of keys from the testing area is grounds for immediate termination. Level 1 clearance is required for basic access to SCP-004-1. Level 4 clearance is required for use of SCP-004-2 through SCP-004-13.",
+    "description": "SCP-004 consists of an old wooden barn door (SCP-004-1) and a set of twelve rusted steel keys (SCP-004-2 through SCP-004-13). Of twelve test subjects each trying a different key, only two survived. Opening the door with any key except SCP-004-7 or SCP-004-12 caused the test subjects to be torn apart in multiple directions. The others have, for all intents and purposes, vanished from existence. The subject using SCP-004-7 said that he had entered a large room, impossibly big for the size of the attached building. The size of the room is impossible to measure. SCP-004 propagates spatiotemporal anomalies — personnel leaving the facility report losing time. All personnel working at Site-62 are required to reside on-site permanently."
+  },
+  {
+    "id": "SCP-005",
+    "class": "Safe",
+    "image": "images/SCP-005.jpg",
+    "shortDesc": "An ornate 1920s-era key capable of opening any lock — mechanical or digital — with no known explanation.",
+    "containment": "SCP-005 poses no immediate risk in any direct sense. Even so, its unique functions require special measures to restrict access and manipulation. Approval of at least one Level 4 personnel is required for the removal of the object from its containment area. SCP-005 may be used as a replacement for lost security passes, but only under supervision of Level 4 personnel. SCP-005 may not be used for vending machine repairs, opening lockers, or for any personnel spare home key. Removal of the object from the compound will result in immediate termination.",
+    "description": "In appearance, SCP-005 resembles an ornate key, displaying the characteristics of a typical mass produced key used in the 1920s. The key was discovered when a civilian used it to infiltrate a high security facility. SCP-005 seems to have the unique ability to open any and all forms of lock, be they mechanical or digital, with relative ease. The origin of this ability has yet to be determined. Further experiments have shown that efforts to disguise the purpose of a lock have proven somewhat successful in defeating SCP-005. In approximately 50% of cases where a volunteer could not identify a locking device as such, SCP-005 was not successful. Due to these results, SCP-005 has been tentatively classified as sentient and further tests are being run to determine its cognitive abilities."
+  },
+  {
+    "id": "SCP-006",
+    "class": "Safe",
+    "image": "",
+    "shortDesc": "A small spring 60km west of Astrakhan whose water grants extraordinary healing, cellular regeneration, and immune system enhancement.",
+    "containment": "All personnel interacting with SCP-006 in any physical way are required to wear modified Class VI BNC suits. Procedures with SCP-006 are to be carried out under extreme surveillance. In case of contact with SCP-006, the commander will announce Procedure 006-Xi-12. Any procedure in which liquid is acquired from SCP-006 must be approved by three O5 level personnel. The liquid is to be transferred in a Quad-Sealant Container and under armed guard. If personnel come into contact with SCP-006, they are to be confined and terminated after sufficient studies. The most effective termination method is incineration.",
+    "description": "SCP-006 is a very small spring located 60 km west of Astrakhan. Foundation Command was aware of its existence since the 19th century but was unable to secure it until 1991 due to political reasons. On the spot of the spring, a chemical factory has been constructed as a disguise. The liquid has been chemically identified as simple mineral water but has the unusual property of health. Ingesting the liquid produces the following in humans: the ability to regenerate DNA damaged by duplication, heightened cellular duplication, vastly improved tissue repair, and a frightening increase in immune system effectiveness. Upon testing on animal subjects, hostile bacteria and viral agents were destroyed immediately. Higher primates experienced the same benefits as humans."
+  }
+]
