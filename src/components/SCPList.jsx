@@ -7,7 +7,12 @@
 
 import SCPCard from './SCPCard';
 
-export default function SCPList({ scpEntries, onCardClick }) {
+export default function SCPList({
+  scpEntries,
+  onCardClick,
+  onDelete,
+  onEdit
+}) {
   return (
     <main className="scp-list">
       {/* Results Count Header */}
@@ -21,7 +26,7 @@ export default function SCPList({ scpEntries, onCardClick }) {
       <div className="scp-list__grid">
         {scpEntries.length > 0 ? (
           scpEntries.map((scp) => (
-            <SCPCard key={scp.id} scp={scp} onClick={onCardClick} />
+            <SCPCard key={scp.item} scp={scp} onClick={onCardClick} onDelete={onDelete} onEdit={onEdit}/>
           ))
         ) : (
           /* Empty State */

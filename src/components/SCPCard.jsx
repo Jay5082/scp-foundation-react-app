@@ -28,7 +28,12 @@ function ClassBadge({ classification }) {
   );
 }
 
-export default function SCPCard({ scp, onClick }) {
+export default function SCPCard({
+  scp,
+  onClick,
+  onDelete,
+  onEdit
+}) {
   const [imgError, setImgError] = useState(false);
   const hasImage = scp.image && scp.image.length > 0 && !imgError;
 
@@ -38,7 +43,7 @@ export default function SCPCard({ scp, onClick }) {
       onClick={() => onClick(scp)}
       tabIndex={0}
       role="button"
-      aria-label={`View details for ${scp.id}`}
+      aria-label={`View details for ${scp.item}`}
       onKeyDown={(e) => {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
@@ -52,7 +57,7 @@ export default function SCPCard({ scp, onClick }) {
           <img
             className="scp-card__image scp-card__image--cinematic"
             src={scp.image}
-            alt={`${scp.id} containment photograph`}
+            alt={`${scp.item} containment photograph`}
             loading="lazy"
             onError={() => setImgError(true)}
           />
@@ -61,7 +66,7 @@ export default function SCPCard({ scp, onClick }) {
             <div className="classified-placeholder__stripes" />
             <div className="classified-placeholder__content">
               <span className="classified-placeholder__label">◼ CLASSIFIED ◼</span>
-              <span className="classified-placeholder__sub">{scp.id} — IMAGE REDACTED</span>
+              <span className="classified-placeholder__sub">{scp.item} — IMAGE REDACTED</span>
             </div>
           </div>
         )}
@@ -73,14 +78,44 @@ export default function SCPCard({ scp, onClick }) {
 
       {/* Card Body */}
       <div className="scp-card__body">
-        <h2 className="scp-card__id">{scp.id}</h2>
-        <p className="scp-card__desc">{scp.shortDesc}</p>
+        <h2 className="scp-card__id">{scp.item}</h2>
+        <p className="scp-card__desc">{scp.description}</p>
         <div className="scp-card__footer">
-          <ClassBadge classification={scp.class} />
-          <button className="scp-card__view-btn" tabIndex={-1}>
-            View File →
-          </button>
-        </div>
+  <ClassBadge classification={scp.class} />
+
+  <div style={{ display: 'flex', gap: '10px' }}>
+    
+    <button
+      className="scp-card__view-btn"
+      tabIndex={-1}
+    >
+      View File →
+    </button>
+
+    <button
+      className="scp-card__view-btn"
+      tabIndex={-1}
+      onClick={(e) => {
+        e.stopPropagation();
+        onEdit(scp);
+      }}
+    >
+      Edit
+    </button>
+
+    <button
+  className="scp-card__view-btn"
+  tabIndex={-1}
+  onClick={(e) => {
+    e.stopPropagation();
+    onDelete(scp.id);
+  }}
+>
+  Delete
+</button>
+
+  </div>
+</div>
       </div>
     </article>
   );

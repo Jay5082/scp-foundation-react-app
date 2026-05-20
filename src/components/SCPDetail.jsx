@@ -78,7 +78,7 @@ export default function SCPDetail({ scp, onClose }) {
       onClick={handleOverlayClick}
       role="dialog"
       aria-modal="true"
-      aria-label={`${scp.id} detail view`}
+      aria-label={`${scp.item} detail view`}
     >
       <div className="modal">
         {/* Close Button */}
@@ -97,7 +97,7 @@ export default function SCPDetail({ scp, onClose }) {
             <img
               className="modal__image modal__image--cinematic"
               src={scp.image}
-              alt={`${scp.id} documentation photograph`}
+              alt={`${scp.item} documentation photograph`}
               onError={() => setImgError(true)}
             />
           ) : (
@@ -105,7 +105,7 @@ export default function SCPDetail({ scp, onClose }) {
               <div className="classified-placeholder__stripes" />
               <div className="classified-placeholder__content">
                 <span className="classified-placeholder__label">◼ CLASSIFIED ◼</span>
-                <span className="classified-placeholder__sub">{scp.id} — IMAGE REDACTED</span>
+                <span className="classified-placeholder__sub">{scp.item} — IMAGE REDACTED</span>
               </div>
             </div>
           )}
@@ -115,7 +115,7 @@ export default function SCPDetail({ scp, onClose }) {
         <div className="modal__content">
           {/* Header: ID + Badge */}
           <div className="modal__header">
-            <h2 className="modal__id">{scp.id}</h2>
+            <h2 className="modal__id">{scp.item}</h2>
             <ClassBadge classification={scp.class} />
           </div>
 
