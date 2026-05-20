@@ -1,3 +1,10 @@
+## Student Information
+
+Name: Jay gajera  
+Student ID: 30084872
+Course: COMP.6210 Web Services & Design Methodologies  
+Semester: Semester 1 2026
+
 # SCP Foundation Database
 
 A premium, cinematic single-page application for browsing SCP Foundation entries. Built with React + Vite.
@@ -79,24 +86,50 @@ npm run preview
 
 ## Project Structure
 
-```
+```txt
 scp-foundation/
+│
+├── backend/
+│   ├── node_modules/
+│   ├── .env
+│   ├── package.json
+│   ├── package-lock.json
+│   └── server.js
+│
+├── documentation/
+│   ├── product-backlog.md
+│   ├── sprint1-standup.md
+│   ├── sprint1-retrospective.md
+│   └── sprint2-standup.md
+│
+├── screenshots/
+│   ├── react-ui.png
+│   ├── scp-records.png
+│   ├── supabase-table.png
+│   ├── trello-board.png
+│   ├── api-get-test.png
+│   └── backend-server-running.png
+│
 ├── public/
-│   └── images/          # SCP images (optional)
+│   └── images/
+│
 ├── src/
 │   ├── components/
-│   │   ├── Navbar.jsx       # Fixed top navigation
-│   │   ├── SearchFilter.jsx # Search + classification filters
-│   │   ├── SCPCard.jsx      # Individual entry card
-│   │   ├── SCPList.jsx      # Responsive card grid
-│   │   └── SCPDetail.jsx    # Detail modal overlay
+│   │   ├── Navbar.jsx
+│   │   ├── SearchFilter.jsx
+│   │   ├── SCPCard.jsx
+│   │   ├── SCPList.jsx
+│   │   └── SCPDetail.jsx
+│   │
 │   ├── data/
-│   │   └── scpData.json     # SCP entries data
-│   ├── App.jsx              # Root component (state management)
-│   ├── index.css            # Global styles + design system
-│   └── main.jsx             # React entry point
-├── index.html               # HTML template
-├── vite.config.js           # Vite configuration
+│   │   └── scpData.json (temporary local data)
+│   │
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+│
+├── index.html
+├── vite.config.js
 ├── package.json
 └── README.md
 ```
@@ -151,12 +184,30 @@ The project follows Agile Scrum methodology across multiple sprints including:
 ---
 
 ## Sprint 2 — REST API Development
-### Planned
-- Create GET endpoint
+
+### Completed
+- Backend Express server initialized
+- Supabase connected to backend
+- GET /items endpoint created
+- JSON API successfully returning SCP records
+- Environment variables configured
+- GET REST API successfully tested with live cloud database
+
+### In Progress
 - Create POST endpoint
 - Create PUT endpoint
 - Create DELETE endpoint
-- Test APIs using Postman
+- API testing with Postman
+
+# REST API
+
+## Current Endpoint
+
+```txt
+GET http://localhost:5000/items
+```
+
+Returns all SCP records from the Supabase cloud database in JSON format.
 
 ---
 
@@ -187,7 +238,9 @@ The project follows Agile Scrum methodology across multiple sprints including:
 | React | Frontend UI |
 | Vite | Development & Build Tool |
 | Netlify | Frontend Deployment |
-| Render | Backend API Hosting |
+| Express.js | Backend REST API |
+| Node.js | Backend Runtime |
+| Render | Backend Deployment |
 | GitHub | Version Control |
 | Trello | Agile Scrum Project Management |
 
@@ -220,6 +273,14 @@ https://trello.com/invite/b/6a0b0352f66d672bee57e547/ATTI8143da0907ce5a81de84372
 ## Trello Scrum Board
 
 ![Trello Board](./screenshots/trello-board.png)
+
+## Backend API Test
+
+![API Test](./screenshots/api-get-test.png)
+
+## Backend Server Running
+
+![Backend Server](./screenshots/backend-server-running.png)
 
 ---
 
