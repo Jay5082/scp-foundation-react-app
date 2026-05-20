@@ -110,3 +110,122 @@ If an image is missing or fails to load, a styled "CLASSIFIED" placeholder is sh
 ## License
 
 This project is for educational purposes only. SCP Foundation content is licensed under CC-BY-SA 3.0.
+
+---
+
+# COMP6210 Assignment Information
+
+This project is developed for:
+
+- COMP.6210 — Web Services & Design Methodologies
+- Assignment 2 — React UI / Cloud Backend Project
+- Assignment 3 — Agile Scrum SDLC Methodology
+
+The project follows Agile Scrum methodology across multiple sprints including:
+
+- Planning
+- Database setup
+- REST API development
+- React frontend integration
+- Testing and deployment
+
+---
+
+# Sprint Progress
+
+## Sprint 1 — Planning & Database Setup
+### Completed
+- GitHub repository created
+- React + Vite project structure completed
+- SCP Foundation UI designed
+- Trello Scrum board setup
+- Product backlog created
+- Supabase cloud database configured
+- SCP database schema designed
+- 20 SCP subjects inserted into cloud database
+- Sprint documentation prepared
+
+### Current Focus
+- Preparing REST API integration for CRUD operations
+
+---
+
+## Sprint 2 — REST API Development
+### Planned
+- Create GET endpoint
+- Create POST endpoint
+- Create PUT endpoint
+- Create DELETE endpoint
+- Test APIs using Postman
+
+---
+
+## Sprint 3 — React CRUD Integration
+### Planned
+- Connect React frontend to REST API
+- Build Add SCP form
+- Build Edit SCP form
+- Add delete functionality
+- Improve UI responsiveness
+
+---
+
+## Sprint 4 — Testing & Deployment
+### Planned
+- Full CRUD testing
+- Deploy frontend to Netlify
+- Deploy backend API
+- Final documentation and screenshots
+
+---
+
+# Cloud Technologies
+
+| Service | Purpose |
+|---|---|
+| Supabase | Cloud PostgreSQL Database |
+| React | Frontend UI |
+| Vite | Development & Build Tool |
+| Netlify | Frontend Deployment |
+| Render | Backend API Hosting |
+| GitHub | Version Control |
+| Trello | Agile Scrum Project Management |
+
+---
+
+# Agile Scrum Board
+
+Trello Board URL:
+
+```txt
+https://trello.com/invite/b/6a0b0352f66d672bee57e547/ATTI8143da0907ce5a81de843721babc4bedFA39D9EE/comp6210-scp-foundation-project
+```
+
+---
+
+# Screenshots
+
+## Supabase Database Records
+
+![SCP Records](./screenshots/scp-records.png)
+
+## Supabase Table Structure
+
+![Supabase Table](./screenshots/supabase-table.png)
+
+## Trello Scrum Board
+
+![Trello Board](./screenshots/trello-board.png)
+
+---
+
+# Future Improvements
+
+- Authentication system
+- SCP image uploads
+- Pagination and advanced filtering
+- User roles and permissions
+- REST API security improvements
+- Better mobile responsiveness
+
+---
