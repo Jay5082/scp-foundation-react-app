@@ -36,3 +36,25 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
+app.post("/items", async (req, res) => {
+  const { item, class: scpClass, description, containment } = req.body;
+
+  const { data, error } = await supabase
+    .from("scp_subjects")
+    .insert([
+      {
+        item,
+        class: scpClass,
+        description,
+        containment
+      }
+    ])
+    .select();
+
+  if (error) {
+    return res.status(500).json({ error: error.message });
+  }
+
+  res.status(201).json(data);
+});

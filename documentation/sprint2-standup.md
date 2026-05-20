@@ -5,11 +5,11 @@
 - Supabase database connected
 - GET API endpoint created
 - JSON data successfully returned from cloud database
+- POST API endpoint created
+- Successfully inserted SCP records into Supabase via API
 
 ## In Progress
 - POST API endpoint
-- PUT API endpoint
-- DELETE API endpoint
 
 ## Issues
 - Understanding Supabase RLS permissions
