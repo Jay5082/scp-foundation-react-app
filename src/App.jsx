@@ -40,7 +40,7 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [activePage]);
   useEffect(() => {
-  fetch('http://localhost:5000/items')
+  fetch('https://scp-foundation-react-app.onrender.com/')
     .then((response) => response.json())
     .then((data) => setScpData(data))
     .catch((error) => console.error('Error fetching SCP data:', error));
@@ -117,7 +117,7 @@ scp.containment.toLowerCase().includes(query)
   if (!confirmDelete) return;
 
   try {
-    await fetch(`http://localhost:5000/items/${id}`, {
+    await fetch(`https://scp-foundation-react-app.onrender.com/items/${id}`, {
       method: 'DELETE'
     });
 

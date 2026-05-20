@@ -18,7 +18,7 @@ export default function AddSCPForm({ onAdd }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("http://localhost:5000/items", {
+    const response = await fetch("https://scp-foundation-react-app.onrender.com/items", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
