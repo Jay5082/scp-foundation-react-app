@@ -205,6 +205,10 @@ https://trello.com/invite/b/6a0b0352f66d672bee57e547/ATTI8143da0907ce5a81de84372
 
 # Screenshots
 
+## React UI
+
+![React UI](./screenshots/react-ui.png)
+
 ## Supabase Database Records
 
 ![SCP Records](./screenshots/scp-records.png)
