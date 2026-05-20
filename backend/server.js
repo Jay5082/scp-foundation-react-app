@@ -58,3 +58,48 @@ app.post("/items", async (req, res) => {
 
   res.status(201).json(data);
 });
+
+app.put("/items/:id", async (req, res) => {
+  const { id } = req.params;
+
+  const {
+    item,
+    class: scpClass,
+    description,
+    containment
+  } = req.body;
+
+  const { data, error } = await supabase
+    .from("scp_subjects")
+    .update({
+      item,
+      class: scpClass,
+      description,
+      containment
+    })
+    .eq("id", id)
+    .select();
+
+  if (error) {
+    return res.status(500).json({ error: error.message });
+  }
+
+  res.json(data);
+});
+
+app.delete("/items/:id", async (req, res) => {
+  const { id } = req.params;
+
+  const { error } = await supabase
+    .from("scp_subjects")
+    .delete()
+    .eq("id", id);
+
+  if (error) {
+    return res.status(500).json({ error: error.message });
+  }
+
+  res.json({
+    message: `SCP record with id ${id} deleted successfully`
+  });
+});

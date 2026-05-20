@@ -193,6 +193,7 @@ The project follows Agile Scrum methodology across multiple sprints including:
 - Environment variables configured
 - GET REST API successfully tested with live cloud database
 
+
 ### In Progress
 - Create POST endpoint
 - Create PUT endpoint
